@@ -1,0 +1,36 @@
+# Reihardt Hammer HID
+
+I used a real hammer to control reinhardt in OverWatch2.
+
+## Description
+
+I want to play Reinhardt in OW2 with immersive experience and, luckily, I have a hammer in my house.
+
+
+## Things I used
+- 1 **Arduino Uno R3** (DON'T USE IT FOR HID. USE LEONARD INSTEAD U NOOB)
+
+Uno doesn't support for HID, pc detects it like normal serial port, so please buy Micro or Leonadro, period.
+- 1 **MPU6050**
+
+- 1 Joy Stick module
+
+- 2 Push switches
+
+## How it went
+I attached an accelerometer, MPU6050, with a hammer to detect its swing and send some values to arduino.
+
+If I swing the hammer faster than 6G, then it will send signal as "click".
+
+The arduino will send "click" as JSON to javascript server via serial port to perform a left clikc in OW2
+which is a single hammer hit.
+
+( I did came up with rf for arduino-pc communication at the time but I had tried it and , somehow, it just didn't work. I knew it later that it needs a capacitor to filter noise out.)
+
+
+and I also applied with joy stick module to control movement of Reinhardt.
+
+
+
+
+
